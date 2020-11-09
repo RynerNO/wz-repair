@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function () {
     // Обработка файлов библиотек и конкатенация в один js файл
     // $.gulp.task('scripts:lib', function() {
     //     return $.gulp.src(['src/static/libs/autosize/autosize.min.js', 'node_modules/jquery/dist/jquery.min.js'])
@@ -9,20 +9,44 @@ module.exports = function() {
     //     }));
     // });
     // Обработка файлов библиотек и перенос в build в исходном виде
-    $.gulp.task('scripts:lib', function() {
+    $.gulp.task('scripts:lib', function () {
         return $.gulp.src('src/static/libs/*/**')
-        .pipe($.gulp.dest('build/libs/'))
-        .pipe($.bs.reload({
-            stream: true
-        }));
-    });
-    // Перенос файла common.js в папку build
-    $.gulp.task('scripts', function() {
-        return $.gulp.src('src/static/js/common.js')
-        .pipe($.gulp.dest('build/js/'))
-        .pipe($.bs.reload({
-            stream: true
-        }));
+            .pipe($.gulp.dest('build/libs/'))
+            .pipe($.bs.reload({
+                stream: true
+            }));
     });
 
-};
+
+
+
+    $.gulp.task('scripts', function () {
+        return $.gulp.src('./src/static/js/common.js')
+            .pipe($.webpackStream({
+                output: {
+                    filename: 'common.js',
+                },
+                module: {
+                    rules: [
+                        {
+                            test: /\.(js)$/,
+                            exclude: /(node_modules)/,
+                            loader: 'babel-loader',
+                            query: {
+                                presets: [['@babel/env', {
+                                    targets: "> 0.25%, not dead"
+                                }]],
+                            }
+                        }
+                    ]
+                },
+            }))
+            .pipe($.gulp.dest('build/js/'))
+            .pipe($.uglify())
+            .pipe($.rename({ suffix: '.min' }))
+            .pipe($.gulp.dest('build/js/'))
+            .pipe($.bs.reload({
+                stream: true
+            }));
+    });
+}

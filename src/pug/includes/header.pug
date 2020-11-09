@@ -1,1 +1,84 @@
-p Шапка
+header.header
+    div.header__top-menu.top-menu
+        div.top-menu__inner
+            nav.top-menu__nav
+                a(href="#").top-menu__nav-item О компании
+                a(href="#").top-menu__nav-item Услуги и цены
+                a(href="#").top-menu__nav-item Акции
+                a(href="#").top-menu__nav-item Преимущества
+                a(href="#").top-menu__nav-item Отзывы
+                a(href="#").top-menu__nav-item Контакты
+            div.top-menu__map
+                +icon('map')
+
+                a(href="#").top-menu__map-link Услуги в Москве и МО
+
+            div(id="top-menu-mobile-container").top-menu__mobile
+                div.top-menu__mobile-bottom
+                    div.top-menu__mobile-controls
+                        div.top-menu__mobile-item
+                            a(href="#" title="О компании") О компании
+                        div.top-menu__mobile-item
+                            a(href="#" title="Услуги и цены") Услуги и цены
+                        div.top-menu__mobile-item
+                            a(href="#" title="Вакансии") Вакансии
+                        div.top-menu__mobile-item
+                            a(href="#" title="Акции") Акции
+                        div.top-menu__mobile-item
+                            a(href="#" title="Преимущества") Преимущества
+                        div.top-menu__mobile-item
+                            a(href="#" title="Отзывы") Отзывы
+                        div.top-menu__mobile-item
+                            a(href="#" title="Контакты") Контакты
+                        
+            button(id="top-menu-mobile-btn").top-menu__mobile-button
+                i
+                    span
+    div.header__top-logo.top-logo
+        div.top-logo__inner
+            a(href="/")
+                div.top-logo__logo 
+                    +icon("logoicon")
+                    p.top-logo__company-name
+                        span Ремонт
+                        span Бытовой техники
+            div.top-logo__worktime
+                +icon("workonghoursicon")
+                h3.top-logo__worktime-text РЕЖИМ РАБОТЫ КРУГЛОСУТОЧНО, 7/24
+            div.top-logo__phones
+                a(href="tel:+7 (123) 123 56 89")
+                    +icon("phoneicon") 
+                    span +7 (123) 123 56 89
+                a(href="tel:+7 (123) 123 56 98") +7 (123) 123 56 98
+                div.top-logo__phones-messengers
+                    a(href="viber://chat?number=+71231235698").top-logo__phones-messenger
+                        +icon("contactviber2")
+                    a(href="https://api.whatsapp.com/send?phone=+71231235698").top-logo__phones-messenger 
+                        +icon("contactwatsapp2")
+                    a(href="https://api.whatsapp.com/send?phone=+71231235698").top-logo__phones-messenger
+                        +icon("contacttelegram2")
+    div.header__bottom-menu.bottom-menu
+        div.bottom-menu__inner
+            nav.bottom-menu__nav
+                a(href="#").bottom-menu__nav-item Стиральные машины
+                a(href="#").bottom-menu__nav-item Посудомоечные машины
+                a(href="#").bottom-menu__nav-item Холодильники
+                a(href="#").bottom-menu__nav-item Кофе-машины
+            div.bottom-menu__call
+                input(type="text" id="request_call_input" placeholder="+7 (---) --- -- --")
+                button(id="request_call_btn") Заказать звонок
+            button(id="bottom-menu-mobile-btn").bottom-menu__mobile-button
+                i
+                    span
+            div(id="bottom-menu-mobile-container").bottom-menu__mobile
+                div.bottom-menu__mobile-bottom
+                    div.bottom-menu__mobile-controls
+                        div.bottom-menu__mobile-item
+                            a(href="#" title="Стиральные машины") Стиральные машины
+                        div.bottom-menu__mobile-item
+                            a(href="#" title="Посудомоечные машины") Посудомоечные машины
+                        div.bottom-menu__mobile-item
+                            a(href="#" title="Холодильники") Холодильники
+                        div.bottom-menu__mobile-item
+                            a(href="#" title="Кофе-машины") Кофе-машины
+            

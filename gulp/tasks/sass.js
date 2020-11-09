@@ -1,6 +1,6 @@
 module.exports = function () {
     $.gulp.task('sass', function () {
-        return $.gulp.src('src/static/css/main.scss')
+        return $.gulp.src('src/static/css/main.sass')
             .pipe($.gp.sourcemaps.init())
             .on("error", $.gp.notify.onError({
                 message: "Error: <%= error.message %>",
@@ -9,7 +9,7 @@ module.exports = function () {
             // .pipe($.gp.csso())
             .pipe($.gp.sass({ outputStyle: 'expanded' }))
             .pipe($.gp.autoprefixer({
-                browsers: ['last 10 versions']
+                overrideBrowserslist: ['last 10 versions']
             }))
             // .pipe($.gp.sourcemaps.write('./'))
             .pipe($.gulp.dest('build/css/'))
