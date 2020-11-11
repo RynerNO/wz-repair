@@ -1,6 +1,6 @@
 module.exports = function () {
     $.gulp.task('sass', function () {
-        return $.gulp.src('src/static/css/main.sass')
+        return $.gulp.src('src/static/css/*.sass')
             .pipe($.gp.sourcemaps.init())
             .on("error", $.gp.notify.onError({
                 message: "Error: <%= error.message %>",

@@ -37,6 +37,10 @@ module.exports = function () {
                                     targets: "> 0.25%, not dead"
                                 }]],
                             }
+                        },
+                        {
+                            test: /\.(css)$/,
+                            loader: 'css-loader'   
                         }
                     ]
                 },

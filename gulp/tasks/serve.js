@@ -3,7 +3,9 @@ module.exports = function() {
         $.bs.init({
             server: {
                 baseDir: "./build",
-                index: "cont.html"
+                index: "index.html",
+                open: false,
+                browser: false
             }
         });
     });

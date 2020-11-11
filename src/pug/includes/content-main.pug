@@ -1,1 +1,430 @@
-p Контент
+main    
+    div.banner
+        div.banner__inner
+            div.banner__text
+                h1 Ремонт бытовой техники
+                h2 Ремонт техники на дому
+                h3 От любого производителя в 
+                    p любое удобное для вас время
+    div.categories
+        div.categories__inner
+            div.swiper-container(id="swiper-categories")
+                div.swiper-wrapper
+                    div.swiper-slide
+                        div.categories__item
+                            div.categories__icon
+                                +icon("icon1")
+                            div.categories__text
+                                h3 Ремонт стиральных 
+                                    p машин
+                            div.categories__price
+                                span от 200 руб.
+                            div.categories__more
+                                a(href="#") Узнать больше
+                    div.swiper-slide
+                        div.categories__item
+                            div.categories__icon
+                                +icon("icon2")
+                            div.categories__text
+                                h3 Ремонт посудо-
+                                    p моечных машин
+                            div.categories__price
+                                span от 200 руб.
+                            div.categories__more
+                                a(href="#") Узнать больше
+                    div.swiper-slide
+                        div.categories__item
+                            div.categories__icon
+                                +icon("icon3")
+                            div.categories__text
+                                h3 Ремонт 
+                                    p холодильников
+                            div.categories__price
+                                span от 450 руб.
+                            div.categories__more
+                                a(href="#") Узнать больше
+                    div.swiper-slide
+                        div.categories__item
+                            div.categories__icon
+                                +icon("icon4")
+                            div.categories__text
+                                h3 Ремонт кофе-
+                                    p машин
+                            div.categories__price
+                                span от 350 руб.
+                            div.categories__more
+                                a(href="#") Узнать больше
+                div(class="swiper-button-next")
+                div(class="swiper-button-prev")
+    div.leave-now
+        div.leave-now__text
+            h3 Вызжаем сейчас же!
+            P Вызовите нашего специалиста на дом и он приедет в течении 30 минут.
+                span Позвоните нам по номеру телефона: 
+                    strong 
+                        a(href="tel:+7 (123) 123 56 89 ") +7 (123) 123 56 89 
+                span или воспользуетесь формой внизу для заказа обратного звонка.
+                span В течении нескольким минут наш сотрудник свяжется с Вами (услуга бесплатна).
+        div.leave-now__call-form
+            input(type="text" placeholder="+7 (---) --- -- --" id="request_call_input_main")
+            div.leave-now__call-form-address
+                i.material-icons location_on
+                input(type="text" placeholder="Ваш адрес" id="request_call_input-address_main")
+            button(id="request_call_input_main_btn") Заказать звонок
+        div.leave-now__privacy
+            p Нажав на кнопку «Заказать звонок» Вы даёте согласие на обработку персональных данных в соответствии с условиями 
+                a(href="#") конфиденциальности
+                |. 
+
+    div.advantages(id="advantages")
+        article.advantages__inner
+            div.advantages__title
+                h3 Наши преимущества
+            div.swiper-container(id="swiper-advantages")
+                    div.swiper-wrapper
+                        div.swiper-slide
+                            section.info
+                                div.info__icon
+                                    +icon("icon5")
+                                div.info__title
+                                    h3  Высокая скорость
+                                        
+                                div.info__description
+                                    p   Устраним поломку не 
+                                        |только качественно, но и в кратчайшие сроки.
+                                        |Оптимальная скорость в работе, принятии заказа и приезде мастера на место!
+                        div.swiper-slide
+                            section.info
+                                div.info__icon
+                                    +icon("icon6")
+                                div.info__title
+                                    h3  Оптимальные цены
+                                        
+                                div.info__description
+                                    p  У нас идеальное соотношение 
+                                        span качества/цена. 
+                                        |Во время и качественно выполненная  работа, 
+                                        |лучшие цены закупки оригинальных запчастей для устранение всех типов неполадок
+                        div.swiper-slide
+                            section.info
+                                div.info__icon
+                                    +icon("icon7")
+                                div.info__title
+                                    h3  Профессионализм
+                                        
+                                div.info__description
+                                    p   В нашей компании работают специалисты только 
+                                        |высшего класса с многолетним опытом 
+                                        |работы
+                                        p Мы выполняем  
+                                            |широкий спектр работ 
+                                            | по починке бытовой техники
+                        div.swiper-slide
+                            section.info
+                                div.info__icon
+                                    +icon("icon8")
+                                div.info__title
+                                    h3  Все бренды
+                                        
+                                div.info__description
+                                    p  Ремонтируем технику большинства популярных  отечественных и зарубежных 
+                                        a(href="#") производителей
+                                        |, 
+                                        |закупая и используя оригинальные детали для каждого типа устройства
+                    div(class="swiper-button-next")
+                    div(class="swiper-button-prev")
+
+    div.reviews(id="reviews")
+        article.reviews__inner
+            div.reviews__title
+                h3 Отзывы наших клиентов
+            div.swiper-container(id="swiper-reviews")
+                div.swiper-wrapper
+                    div.swiper-slide
+                        section.reviews__review
+                            div.reviews__review-container
+                                div.reviews__name
+                                    h4 Антон
+                                div.reviews__text
+                                    p Отличная работа! Молодцы ребята!
+                                div.reviews__rating
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                    div.swiper-slide
+                        section.reviews__review
+                            div.reviews__review-container
+                                div.reviews__name
+                                    h4 Валентина
+                                div.reviews__text
+                                    p Работой ребят довольны, но вот цены дороговато
+                                div.reviews__rating
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star.reviews__star-disabled star_rate
+                    div.swiper-slide
+                        section.reviews__review
+                            div.reviews__review-container
+                                div.reviews__name
+                                    h4 Александр
+                                div.reviews__text
+                                    p Все отлично! Спасибо!
+                                div.reviews__rating
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                    div.swiper-slide
+                        section.reviews__review
+                            div.reviews__review-container
+                                div.reviews__name
+                                    h4 Саша
+                                div.reviews__text
+                                    p Всегда пользуюсь услугами данного сервиса.
+                                        |Устраивает и работа и цены, в общем, всё всё
+                                div.reviews__rating
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                    div.swiper-slide
+                        section.reviews__review
+                            div.reviews__review-container
+                                div.reviews__name
+                                    h4 Антон
+                                div.reviews__text
+                                    p Отличная работа! Молодцы ребята!
+                                div.reviews__rating
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+                                    i.material-icons.reviews__star star_rate
+            div(class="swiper-button-next")
+            div(class="swiper-button-prev")            
+            div.icon-button.reviews__leave-review
+                a(href="#")
+                    button  
+                        +icon('repostbuttonicon')
+                        span Оставить свой отзыв
+    article.about(id="about")
+        section.about__inner
+            div.about__title
+                h3 О нашей компании
+            div.about__text
+                p Наша компания работает в сфере ремонтных услуг бытовой техники на протяжении вот уже многих лет. 
+                    |Это обусловлено как профессионализмом наших сотрудников, также и качеством запчастей используемых для 
+                    |починки бытовой техники и продуманной процедурой обслуживания клиентов.
+                    p Разнообразие предоставляемых нами услуг по устранению неисправностей в электронной технике обеспечило нам хорошую клиентскую базу. 
+                        |В числе наших клиентов есть как обычные потребители, так и целые организации и компании, которые на притяжении 
+                        |многих лет являются нашими постоянными клиентами.
+                    p Мы не только стараемся качественно обслужить наших клиентов, но и пытаемся максимально сэкономить их время. 
+                        |Наши сотрудники строго соблюдают регламент процедуры обслуживания, что позволяет значительно сэкономить время обслуживания.
+                    p Третьим  критерием нашей эффективной работы с клиентами является цена. Мы всегда предлагаем наши услуги 
+                        |по самым оптимальным ценам, с учётом нюансов рынка запчастей и их качества.
+                    p Наши клиенты, которые обращаются к нам за помощью при поломке техники, не раз высказывали нам свою благодарность.
+                    p Процесс работы с клиентами поделён на несколько этапов, в которых задействованы 
+                        |специалисты разных профилей самого высокого класса. На каждом этапе, от приёма заказов до починки техники, 
+                        |мы обеспечиваем нашему клиенту самый высокий и комфортный уровень обслуживания.
+
+    div.advantages.work-stages
+        article.advantages__inner
+            div.advantages__title
+                h3 Этапы работы
+            div.swiper-container(id="swiper-advantages")
+                    div.swiper-wrapper
+                        div.swiper-slide
+                            section.info
+                                div.info__icon
+                                    +icon("icon9")
+                                div.info__title
+                                    h3  Приём заявки
+                                        
+                                div.info__description
+                                    p   Вы оставляете заявку на сайте или по телефону и предоставляете информацию и контактные данные нашему оператору, 
+                                        |который подберёт Вам соответствующего специалиста.
+                        div.swiper-slide
+                            section.info
+                                div.info__icon
+                                    +icon("icon10")
+                                div.info__title
+                                    h3  Выезд мастера
+                                        
+                                div.info__description
+                                    p В выбранное Вами время по указанному в заявке адресу к Вам приедет специалист компании и произведет 
+                                        |диагностику и составление сметы работ
+                        div.swiper-slide
+                            section.info
+                                div.info__icon
+                                    +icon("icon11")
+                                div.info__title
+                                    h3  Починка техники
+                                        
+                                div.info__description
+                                    p   Согласовав стоимость работ, материалов и запчастей, 
+                                        |специалист произведет все необходимые ремонтные работы
+                        div.swiper-slide
+                            section.info
+                                div.info__icon
+                                    +icon("icon12")
+                                div.info__title
+                                    h3  Приём работы
+                                        
+                                div.info__description
+                                    p  После выполнения работ, специалист предоставит 
+                                        |Вам чек и бесплатный гарантийный талон сроком на 1 год.
+                    div(class="swiper-button-next")
+                    div(class="swiper-button-prev")
+    div.counters
+        div.counters__inner(id="animated-numbers")
+            div.counters__item
+                p.counters__number(number="35") 35
+                p.counters__text Специалистов в штате
+            div.counters__item
+                p.counters__number(number="10") 10
+                p.counters__text Филлиалов по Москве и МО
+            div.counters__item
+                p.counters__number(number="1200") 1200
+                p.counters__text Выполненных работ в месяц
+            div.counters__item
+                p.counters__number(number="35") 35
+                p.counters__text Среднее время прибытия на место
+    div.services(id="services")
+        div.services__title
+            h3 Услуги и цены
+        div.services__sub-title
+            h4 Типичные поломки и неисправности
+        div.services__table
+            div.services__column1
+                p Плохо моет
+                p Течет вода
+                p Не сушит
+                p Не заливает воду
+                p Не греет воду
+                p Не включается
+                p Не сливает воду
+                p Отключается
+                p Сильно шумит
+            div.services__column2
+                p Заменим ТЭН, распылитель или устраним засор
+                p Починим реле уровня воды, заменим шланги
+                p Заменим ТЭН, датчик температуры или вентилятор
+                p Починим модуль, заменим клапан или устраним засор
+                p Починим модуль, заменим ТЭН или датчик температуры
+                p Починим сетевой фильтр, модуль или заливную систему
+                p Починим насос, заменим датчик воды, устраним засор
+                p Починим сетевой фильтр, модуль или заливную систему
+                p Устраним засор, заменим распылитель
+            div.services__column3
+                p 210 руб
+                p 210 руб
+                p 210 руб
+                p 210 руб
+                p 210 руб
+                p 210 руб
+                p 210 руб
+                p 210 руб
+                p 210 руб
+        div.icon-button.reviews__leave-review
+                a(href="#")
+                    button  
+                        +icon('gears')
+                        span Показать полный список
+    div.brands
+        div.brands__inner      
+            div.brands__title
+                h3 Ремонт техники от следующих производителнй
+            div.brands__slider
+                div.swiper-container(id="swiper-brands")
+                    div.swiper-wrapper
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="/img/lg.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="/img/indesit.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="/img/hotpoint-ariston.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="/img/electrolux.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="/img/samsung.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="/img/bosch.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="/img/whirlpool.png")
+                div(class="swiper-button-next")
+                div(class="swiper-button-prev")     
+            a(href="#")
+                button.brands__show-all Показать всех
+    div.sale(id="sale")
+        div.sale__slider
+            div.swiper-container(id="swiper-sale")
+                div.swiper-wrapper
+                    div.swiper-slide
+                        div.sale__image
+                            img(src="/img/sale.png")
+                div(class="swiper-button-next")
+                div(class="swiper-button-prev")     
+div.contacts(id="contacts")
+    div.contacts__main-title
+        h3 Контакты
+    div.contacts__container
+        div.contacts__inner
+            div.contacts__address
+                div.contacts__address-inner
+                    p Адрес:
+                    p Центральный офис: 
+                        span 
+                            br 
+                            |г. Город, пр. Проспект, ул. Улица
+                    p Телефон: 
+                        span +7 (123) 123 56 89
+                    p E-майл: е-майл
+                    div.contacts__address-social
+                        a(href="viber://chat?number=+71231235698").top-logo__phones-messenger
+                            +icon("contactviber1")
+                        a(href="https://api.whatsapp.com/send?phone=+71231235698").top-logo__phones-messenger 
+                            +icon("contactwatsapp1")
+                        a(href="https://api.whatsapp.com/send?phone=+71231235698").top-logo__phones-messenger
+                            +icon("contacttelegram1")
+                        span : +7 (123) 123 56 89
+            div.contacts__form
+                div.contacts__form-call
+                    div.contacts__title.contacts__title-phone
+                        h4 Заказать звонок
+                    div
+                        input(type="text" placeholder="Имя")
+                        input(type="text" placeholder="+7 (---) --- -- --")
+                        button Заказать
+                div.contacts__form-master
+                    div.contacts__title.contacts__title-master
+                        h4 Вызвать специалиста
+                    div.contacts__form-master-container
+                        div
+                            input(type="text" placeholder="Имя")
+                        div.leave-now__call-form-address
+                            i.material-icons location_on
+                            input(type="text" placeholder="Ваш адрес" )
+                        div
+                            input(type="text" placeholder="+7 (---) --- -- --")
+                        button Сделать вызов
+                    div.contacts__form-master-warning 
+                        p
+                            i.material-icons priority_high 
+                            |Прежде, чем сделать вызов, 
+                            |советуем Вам сделать звонок, 
+                            |проконсультироваться и 
+                            a(href="") узнать цены 
+    
