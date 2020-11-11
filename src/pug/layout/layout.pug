@@ -7,7 +7,8 @@ html(lang="ru-RU")
         //- meta(name="viewport" , content="width=device-width, initial-scale=1")
         meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1")
         title #{title}
-        include ../includes/links.pug
+        block links
+            include ../includes/links.pug
     body
         div.wrapper
             block header
@@ -15,3 +16,4 @@ html(lang="ru-RU")
             block content
 
             block footer
+            block scripts

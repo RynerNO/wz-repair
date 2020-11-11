@@ -53,4 +53,37 @@ module.exports = function () {
                 stream: true
             }));
     });
+    $.gulp.task('scripts', function () {
+        return $.gulp.src('./src/static/js/page.js')
+            .pipe($.webpackStream({
+                output: {
+                    filename: 'page.js',
+                },
+                module: {
+                    rules: [
+                        {
+                            test: /\.(js)$/,
+                            exclude: /(node_modules)/,
+                            loader: 'babel-loader',
+                            query: {
+                                presets: [['@babel/env', {
+                                    targets: "> 0.25%, not dead"
+                                }]],
+                            }
+                        },
+                        {
+                            test: /\.(css)$/,
+                            loader: 'css-loader'   
+                        }
+                    ]
+                },
+            }))
+            .pipe($.gulp.dest('build/js/'))
+            .pipe($.uglify())
+            .pipe($.rename({ suffix: '.min' }))
+            .pipe($.gulp.dest('build/js/'))
+            .pipe($.bs.reload({
+                stream: true
+            }));
+    });
 }

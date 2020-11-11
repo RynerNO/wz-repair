@@ -1,0 +1,26 @@
+extends ../banner.pug
+block vars
+    - var h1 = "Ремонт"
+    - var h2 = "Стиральных машин"
+    - var h3 = "Ремонт на дому"
+    - var p = "В любое удобное для вас время"
+block content 
+    div.banner
+        div.banner__inner
+            div.banner__text
+                h1 #{h1}
+                h2 #{h2}
+                h3 #{h3}
+                    p #{p}
+            div.banner__modal
+                div.banner__modal-title
+                    h4 Вызвать специалиста
+                div.banner__modal-container
+                    div
+                        input(type="text" placeholder="Имя")
+                    div.leave-now__call-form-address
+                        i.material-icons location_on
+                        input(type="text" placeholder="Ваш адрес" )
+                    div
+                        input(type="text" placeholder="+7 (---) --- -- --")
+                    button Сделать вызов

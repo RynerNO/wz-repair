@@ -115,9 +115,16 @@ textarea {
   height: 17px;
 }
 
-.icon-contactviber1, .icon-contactwatsapp1, .icon-contacttelegram1 {
+.icon-contactviber1, .icon-contactwatsapp1, .icon-contacttelegram1, .icon-contactviber3, .icon-contactwatsapp3, .icon-contacttelegram3 {
   width: 16px;
   height: 17px;
+}
+
+.icon-checked {
+  width: 57px;
+  height: 56px;
+  min-width: 57px;
+  min-height: 56px;
 }
 
 .swiper-button-next {
@@ -185,10 +192,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -o-linear-gradient(left, #f9f9f9 1px, transparent 1px);
-  background-image: linear-gradient(90deg, #f9f9f9 1px, transparent 1px);
-  background-size: 3px 1px;
-  background-position: -2px -2px;
 }
 
 .header__bottom-menu {
@@ -425,6 +428,13 @@ textarea {
 
 .top-menu__mobile-button:hover i::after {
   width: 100%;
+}
+
+.top-logo {
+  background-image: -o-linear-gradient(left, #f9f9f9 1px, transparent 1px);
+  background-image: linear-gradient(90deg, #f9f9f9 1px, transparent 1px);
+  background-size: 3px 1px;
+  background-position: -2px -2px;
 }
 
 .top-logo__inner {
@@ -1328,7 +1338,7 @@ textarea {
 
 .advantages__title {
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 54px;
   margin-top: 20px;
 }
 
@@ -2199,6 +2209,14 @@ textarea {
   margin-top: 7px;
 }
 
+.contacts__address-inner p a {
+  text-decoration: underline;
+}
+
+.contacts__address-inner p a:hover {
+  color: #ff0000;
+}
+
 .contacts__address-inner span {
   font-weight: 400;
 }
@@ -2210,6 +2228,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 5px;
 }
 
 .contacts__address-social a {
@@ -2439,6 +2458,7 @@ textarea {
   background: -o-linear-gradient(left, #383838 1px, transparent 1px), -o-linear-gradient(bottom, #383838 1px, transparent 1px), -o-linear-gradient(top, #505050 0%, #505050 100%);
   background: linear-gradient(90deg, #383838 1px, transparent 1px), linear-gradient(0deg, #383838 1px, transparent 1px), linear-gradient(to bottom, #505050 0%, #505050 100%);
   background-size: 2px 1px, 1px 2px, 1px;
+  padding-top: 8px;
 }
 
 .copiright__inner {

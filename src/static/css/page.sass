@@ -1,0 +1,353 @@
+.banner
+    min-height: 270px
+    &__inner
+        max-width: 1103px
+        width: 100%
+        height: 100%     
+        margin: 0 auto
+        padding-left: 10px
+        display: flex
+        justify-content: flex-end
+        @media ( max-width: 680px  )
+            flex-direction: column
+            align-items: center
+            padding-bottom: 40px
+    display: block
+    flex-direction: column
+    justify-content: center
+    background-image: url(../img/posudomoyka.png),  linear-gradient(106deg, #ffffff 0%, #ebebeb 100%)
+    background-position: bottom right,left,right
+    background-repeat: no-repeat
+    background-position: 13% 0%, 52% -14%
+    background-size: 430px 268px, 100% 253px
+
+
+    @media ( max-width: 940px  )
+       background-position: 13% 0%, 52% -14%
+        background-size: 430px 268px, 100% 253px
+    @media ( max-width: 680px  )
+        background-position: -6% 105%, 52% -14%
+        background-size: 430px 268px, 100% 100%
+    @media ( max-width: 430px  )
+        background-position: -6% 105%, 52% -14%
+        background-size: 430px 268px, 100% 100%
+    @media (max-width: 600px)
+            font-size: 25px    
+            justify-content: flex-start
+    &__text
+        max-width: 311px
+        width: 100%
+        margin-top: 30px
+        margin-right: 86px
+        @media ( max-width: 680px  )
+            margin-right: 0px
+        h1,h2,h3
+            text-transform: uppercase
+        h1
+            font-size: 42px
+            color: #ff0000
+            font-weight: 700
+            font-family: "Open Sans Condensed"
+            @media (max-width: 600px)
+                font-size: 32px    
+            @media (max-width: 460px)
+                font-size: 28px  
+            
+        h2
+            font-size: 22px
+            color: #333333
+            font-weight: 600
+            @media (max-width: 600px)
+                font-size: 20px    
+            @media (max-width: 460px)
+                font-size: 18px  
+        h3
+            font-size: 14px
+            color: #333333
+            font-weight: 600
+    
+    input
+        border-radius: 4px
+        font-size: 12px
+        padding: 5px 11px
+        max-width: 174px
+        width: 100%
+        outline: none
+        border: none
+        &::placeholder
+            color: #999999
+            font-size: 12px
+    button
+        max-width: 174px
+        width: 100%
+        height: 24px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 4px
+        color: #ffffff
+        font-size: 14px
+        font-weight: 700
+        background-color: #ff0000
+        margin-top: 16px
+    &__modal
+        max-width: 259px
+        min-height: 251px
+        background: linear-gradient(90deg, #383838 1px, transparent 1px), 
+        linear-gradient(0deg, #383838 1px, transparent 1px), 
+        linear-gradient(to bottom, #505050 0%, #505050 100%)
+        background-size: 2px 1px, 1px 2px, 1px
+        width: 100%
+        @media ( max-width: 680px  )
+            margin-top: 30px
+        &-title
+            margin-top: 36px
+            h4
+                font-size: 18px
+                color: #ffffff
+                font-weight: 700
+                font-family: "Open Sans Condensed"
+                text-transform: uppercase
+                text-align: center
+        .leave-now__call-form-address
+            max-width: 173px
+            margin-left: 0
+            padding: 0
+            padding-left: 5px
+        &-container
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+            div
+                display: flex
+                justify-content: flex-start
+                margin-top: 16px
+                max-width: 174px
+                width: 100%
+
+.terms
+    min-height: 129px
+    background: linear-gradient(90deg, #efefef 2px, transparent 1px), 
+    linear-gradient(0deg, #fefefe 1px, transparent 1px), 
+    linear-gradient(to bottom, #dddddd 0%, #f5f4f4 100%)
+    background-size: 4px 1px, 1px 2px, 1px
+    background-repeat: no-repeat, repeat, repeat, repeat
+    background-position: -2px -2px, -2px -2px
+    &__item
+        display: flex
+        max-width: 383px
+        font-size: 24px
+        color: #333333
+        font-weight: 700
+        font-family: "Open Sans Condensed"
+        margin-left: 70px
+        p
+            margin-left: 25px
+    &__inner
+        max-width: 1153px
+        width: 100%
+        margin: 0 auto
+        min-height: 129px
+        display: flex
+        align-items: center
+        justify-content: center
+        @media screen and ( max-width: 1161px  )
+            flex-wrap: wrap
+            min-height: 289px
+            justify-content: space-around
+
+
+.leave-now
+    &__call-form
+        background-color: #cccccc
+        &::before
+            background-image: url(../img/worker4.png)
+            background-size: 100%
+            @media ( max-width: 1308px  )
+                left: 2%
+            @media (max-width: 1187px)
+                width: 193px
+                background-image: none
+                height: 238px
+            @media ( max-width: 976px  )
+                background-image: url(../img/worker4.png)
+                bottom: 11%
+.counters
+    background-image: url(../img/instrumentstexture2.png),
+    linear-gradient(90deg, #fff 1px, transparent 1px), 
+    linear-gradient(0deg, #fff 1px, transparent 1px),
+    linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 100%)
+    background-size: 117%, 3px 1px, 2px 3px, 1px
+    &__text
+        color:#333333
+
+
+.contacts
+    background-repeat: no-repeat
+ 
+    &__main-title
+        h3
+            font-size: 32px
+            color: #333333
+            font-weight: 700
+            @media (max-width: 600px)
+                font-size: 28px    
+            @media (max-width: 460px)
+                font-size: 24px  
+        text-align: center
+        margin-top: 41px
+        margin-bottom: 42px
+    &__container
+    &__address
+        background-color: #fff     
+        &-inner
+            p,span
+                color: #333333
+                font-size: 14px
+.tipikal
+    background: none
+    &__price
+        p 
+            font-size: 18px
+            color: #ff0000
+            font-weight: 700
+            margin-top: 10px
+            
+.price
+    &__main-title
+        margin-bottom: 17px
+        h3
+            font-size: 32px
+            color: #333333
+            font-weight: 700
+            text-align: center
+    &__container
+        min-height: 323px
+        background-image: linear-gradient(90deg, #f7f7f7 1px, transparent 1px), linear-gradient(0deg, #f7f7f7 1px, transparent 1px)
+        background-size: 3px 1px, 2px 3px
+        background-position: -2px -2px
+    &__title
+        font-size: 16px
+        color: #333333
+        font-weight: 700
+        margin: 0
+    &__inner
+        max-width: 1151px
+        width: 100%
+        margin: 0 auto
+        display: flex
+        padding-top: 47px
+        padding-left: 20px
+        padding-right: 20px
+        @media (max-width: 600px)
+            flex-wrap: wrap
+    &__reason
+        max-width: 525px
+        width: 100%
+        @media (max-width: 600px)
+            margin-top: 10px
+    &__choose
+        display: flex
+        flex-direction: column
+        margin-right: 9px
+        max-width: 243px
+        width: 100%
+        display: flex
+        align-items: center
+        
+    &__select
+        width: 100%
+        max-width: 243px
+        margin-top: 10px
+        position: relative
+        &-button
+            width: 100%
+            height: 29px
+            border-radius: 4px
+            background-color: #ffffff
+            border: 1px solid #cccccc
+            padding-left: 10px
+            position: relative
+            z-index: 15
+            cursor: pointer
+            &::after
+                content: "play_arrow"
+                font-family: "Material Icons"
+                position: absolute
+                right: 8px
+                font-size: 15px
+                top: calc( 50% - 8px )
+                transition: transform 0.2s linear
+            &_active
+                &::after
+                    transform: rotate(90deg)
+        &-items
+            position: absolute  
+            width: 100%
+            top: 92%
+            left: 0
+            margin-botom: 10px
+            background-color: #ffffff
+            border: 1px solid #cccccc
+            border-top: none
+            padding-top: 3px
+            pointer-events: none
+            opacity: 0
+            
+            &_visible
+                opacity: 1
+                pointer-events: auto
+        &-item
+            margin-bottom: 10px
+            padding-left: 10px
+            cursor: pointer
+            cursor: pointer
+            font-size: 14px
+            color: #333333
+            &_selected
+                display: none
+            &:hover
+                color: #ffffff
+                background-color: #ff0000
+    &__prices
+        margin-left: 16px
+        @media (max-width: 600px)
+            margin-top: 10px
+            margin-left: 0px
+        &-container
+            display: flex
+            margin-top: 10px
+            @media (max-width: 835px)
+                display: flex
+                flex-wrap: wrap
+        &-block
+            @media (max-width: 835px)
+                margin-top: 10px
+            &:nth-child(3)
+                p
+                    color: #ff0000
+                    font-weight: 700
+            p
+                padding-left: 12px
+                width: 111px
+                height: 29px
+                border-radius: 4px
+                background-color: #ffffff
+                border: 1px solid #cccccc
+                margin-right: 11px
+                display: flex
+                align-items: center
+            span
+                margin-top: 9px
+                display: block
+    &__textarea
+        max-width: 524px
+        width: 100%
+        min-height: 114px
+        border-radius: 4px
+        background-color: #ffffff
+        border: 1px solid #cccccc
+        padding-top: 10px
+        padding-left: 15px
+        margin-top: 10px

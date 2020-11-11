@@ -1,0 +1,51 @@
+div.contacts(id="contacts")
+    div.contacts__main-title
+        h3 Контакты
+    div.contacts__container
+        div.contacts__inner
+            div.contacts__address
+                div.contacts__address-inner
+                    p Адрес:
+                    p Центральный офис: 
+                        span 
+                            br 
+                            |г. Город, пр. Проспект, ул. Улица
+                    p Телефон: 
+                        span +7 (123) 123 56 89
+                    p E-майл: 
+                        a(href="#") е-майл
+                    div.contacts__address-social
+                        a(href="viber://chat?number=+71231235698").top-logo__phones-messenger
+                            +icon("contactviber1")
+                        a(href="https://api.whatsapp.com/send?phone=+71231235698").top-logo__phones-messenger 
+                            +icon("contactwatsapp1")
+                        a(href="https://api.whatsapp.com/send?phone=+71231235698").top-logo__phones-messenger
+                            +icon("contacttelegram1")
+                        span : +7 (123) 123 56 89
+            div.contacts__form
+                div.contacts__form-call
+                    div.contacts__title.contacts__title-phone
+                        h4 Заказать звонок
+                    div
+                        input(type="text" placeholder="Имя")
+                        input(type="text" placeholder="+7 (---) --- -- --")
+                        button Заказать
+                div.contacts__form-master
+                    div.contacts__title.contacts__title-master
+                        h4 Вызвать специалиста
+                    div.contacts__form-master-container
+                        div
+                            input(type="text" placeholder="Имя")
+                        div.leave-now__call-form-address
+                            i.material-icons location_on
+                            input(type="text" placeholder="Ваш адрес" )
+                        div
+                            input(type="text" placeholder="+7 (---) --- -- --")
+                        button Сделать вызов
+                    div.contacts__form-master-warning 
+                        p
+                            i.material-icons priority_high 
+                            |Прежде, чем сделать вызов, 
+                            |советуем Вам сделать звонок, 
+                            |проконсультироваться и 
+                            a(href="") узнать цены 

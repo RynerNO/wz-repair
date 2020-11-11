@@ -1,0 +1,36 @@
+div.price(id="price-calc")
+    div.price__main-title
+        h3 Сколько будет стоить
+    div.price__container
+        div.price__inner
+            div.price__choose
+                h5.price__title Проблема
+                div.price__select
+                    div.price__select-button
+                        span Плохо моет
+                    div.price__select-items
+                        p(price="250" work="500" reason="Заменим ТЭН, распылитель или устраним засор").price__select-item.price__select-item_selected Плохо моет
+                        p(price="150" work="400" reason="Починим реле уровня воды, заменим шланги").price__select-item Течет вода
+                        p(price="550" work="50" reason="Заменим ТЭН, распылитель или устраним засор").price__select-item Не сушит
+                        p(price="350" work="650" reason="Заменим ТЭН, распылитель или устраним засор").price__select-item Не заливает воду
+                        p(price="150" work="240" reason="Заменим ТЭН, распылитель или устраним засор").price__select-item Не греет воду
+                        p(price="350" work="1250" reason="Починим сетевой фильтр, модуль или заливную систему").price__select-item Не включается
+                        p(price="2250" work="250" reason="Заменим ТЭН, распылитель или устраним засор").price__select-item Не сливает воду
+                        p(price="2520" work="250" reason="Устраним засор, заменим распылитель").price__select-item Отключается
+                        p(price="250" work="2250" reason="Устраним засор, заменим распылитель").price__select-item Сильно шумит
+            div.price__reason
+                h5.price__title Причины
+                p.price__textarea Заменим ТЭН, распылитель или устраним засор
+                    
+            dvi.price__prices
+                h5.price__title Цена
+                div.price__prices-container
+                    div.price__prices-block
+                        p 210 руб.
+                        span Материалы
+                    div.price__prices-block
+                        p 210 руб.
+                        span Работа
+                    div.price__prices-block
+                        p 210 руб.
+                        span Всего

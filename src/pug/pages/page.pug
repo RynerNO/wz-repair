@@ -1,11 +1,16 @@
 extends ../layout/layout.pug
+block links
+    include ../includes/links.pug
+    link(rel="stylesheet" href="css/page.css")
 block vars
-	- var title = 'Ремонт стиральных машин';
+    - var title = 'Ремонт стиральных машин';
 block header
-	include ../includes/header.pug
+    include ../includes/header.pug
 block content
-	include ../includes/content-main.pug
+    include ../includes/content-page.pug
 	
 block footer
-	include ../includes/footer.pug     
+    include ../includes/footer.pug     
               
+block scripts
+    script(src="js/page.min.js" type="text/javascript" defer)

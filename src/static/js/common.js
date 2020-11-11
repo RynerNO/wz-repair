@@ -92,8 +92,8 @@ const swiperCategories = new Swiper('#swiper-categories', {
 const swiperReviews = new Swiper('#swiper-reviews', {
       slidesPerView: 4,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.reviews__swiper-button-next',
+          prevEl: '.reviews__swiper-button-prev',
         },
         
         watchOverflow: true,
@@ -163,8 +163,8 @@ observer.observe(animeNumbersCont);
 
 const swiperBrands = new Swiper('#swiper-brands', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.brands__swiper-button-next',
+      prevEl: '.brands__swiper-button-prev',
     },
     
     watchOverflow: true,
@@ -247,3 +247,6 @@ let yandexMapobserver = new IntersectionObserver(yandexMapcallbackFunc, yandexMa
 
 
 yandexMapobserver.observe(yandexMap);
+
+
+

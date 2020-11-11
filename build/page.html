@@ -13,6 +13,7 @@
     <link rel="preload" href="libs/material-icons/material-font.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="css/fonts.css" as="style" onload="this.rel='stylesheet'" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page.css">
   </head>
   <body>
     <div class="wrapper">
@@ -92,91 +93,222 @@
           </div>
         </div>
       </header>
-      <main>   
+      <main>
         <div class="banner">
           <div class="banner__inner">
             <div class="banner__text">
-              <h1>Ремонт бытовой техники</h1>
-              <h2>Ремонт техники на дому</h2>
-              <h3>От любого производителя в 
-                <p>любое удобное для вас время</p>
+              <h1>Ремонт</h1>
+              <h2>Стиральных машин</h2>
+              <h3>Ремонт на дому
+                <p>В любое удобное для вас время</p>
               </h3>
+            </div>
+            <div class="banner__modal">
+              <div class="banner__modal-title">
+                <h4>Вызвать специалиста</h4>
+              </div>
+              <div class="banner__modal-container">
+                <div>
+                  <input type="text" placeholder="Имя">
+                </div>
+                <div class="leave-now__call-form-address"><i class="material-icons">location_on</i>
+                  <input type="text" placeholder="Ваш адрес">
+                </div>
+                <div>
+                  <input type="text" placeholder="+7 (---) --- -- --">
+                </div>
+                <button>Сделать вызов</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="categories">
-          <div class="categories__inner">
-            <div class="swiper-container" id="swiper-categories">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="categories__item">
-                    <div class="categories__icon">
-                      <svg class="icon icon-icon1 ">
-                        <use xlink:href="img/svg/sprite.svg#icon1"></use>
-                      </svg>
-                    </div>
-                    <div class="categories__text">
-                      <h3>Ремонт стиральных 
-                        <p>машин</p>
-                      </h3>
-                    </div>
-                    <div class="categories__price"><span>от 200 руб.</span></div>
-                    <div class="categories__more"><a href="#">Узнать больше</a></div>
+        <div class="terms">
+          <div class="terms__inner">
+            <div class="terms__item">
+              <svg class="icon icon-checked ">
+                <use xlink:href="img/svg/sprite.svg#checked"></use>
+              </svg>
+              <p>Гарантия на все виды работ - 12 месяцев</p>
+            </div>
+            <div class="terms__item">
+              <svg class="icon icon-checked ">
+                <use xlink:href="img/svg/sprite.svg#checked"></use>
+              </svg>
+              <p>Выезд через 30 минут после оформления заявки</p>
+            </div>
+            <div class="terms__item">
+              <svg class="icon icon-checked ">
+                <use xlink:href="img/svg/sprite.svg#checked"></use>
+              </svg>
+              <p>Мастера по всей Москве и МО</p>
+            </div>
+          </div>
+        </div>
+        <div class="brands">
+          <div class="brands__inner">     
+            <div class="brands__title">
+              <h3>Нам под силу ремонтировать:</h3>
+            </div>
+            <div class="brands__slider">
+              <div class="swiper-container" id="swiper-brands">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="brands__brand"><img src="img/lg.png"></div>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="categories__item">
-                    <div class="categories__icon">
-                      <svg class="icon icon-icon2 ">
-                        <use xlink:href="img/svg/sprite.svg#icon2"></use>
-                      </svg>
-                    </div>
-                    <div class="categories__text">
-                      <h3>Ремонт посудо-
-                        <p>моечных машин</p>
-                      </h3>
-                    </div>
-                    <div class="categories__price"><span>от 200 руб.</span></div>
-                    <div class="categories__more"><a href="#">Узнать больше</a></div>
+                  <div class="swiper-slide">
+                    <div class="brands__brand"><img src="img/indesit.png"></div>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="categories__item">
-                    <div class="categories__icon">
-                      <svg class="icon icon-icon3 ">
-                        <use xlink:href="img/svg/sprite.svg#icon3"></use>
-                      </svg>
-                    </div>
-                    <div class="categories__text">
-                      <h3>Ремонт 
-                        <p>холодильников</p>
-                      </h3>
-                    </div>
-                    <div class="categories__price"><span>от 450 руб.</span></div>
-                    <div class="categories__more"><a href="#">Узнать больше</a></div>
+                  <div class="swiper-slide">
+                    <div class="brands__brand"><img src="img/hotpoint-ariston.png"></div>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="categories__item">
-                    <div class="categories__icon">
-                      <svg class="icon icon-icon4 ">
-                        <use xlink:href="img/svg/sprite.svg#icon4"></use>
-                      </svg>
-                    </div>
-                    <div class="categories__text">
-                      <h3>Ремонт кофе-
-                        <p>машин</p>
-                      </h3>
-                    </div>
-                    <div class="categories__price"><span>от 350 руб.</span></div>
-                    <div class="categories__more"><a href="#">Узнать больше</a></div>
+                  <div class="swiper-slide">
+                    <div class="brands__brand"><img src="img/electrolux.png"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brands__brand"><img src="img/samsung.png"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brands__brand"><img src="img/bosch.png"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="brands__brand"><img src="img/whirlpool.png"></div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next brands__swiper-button-next"></div>
+              <div class="swiper-button-prev brands__swiper-button-prev">    </div>
+            </div><a href="#">
+              <button class="brands__show-all">Показать всех</button></a>
+          </div>
+        </div>
+        <div class="price" id="price-calc">
+          <div class="price__main-title">
+            <h3>Сколько будет стоить</h3>
+          </div>
+          <div class="price__container">
+            <div class="price__inner">
+              <div class="price__choose">
+                <h5 class="price__title">Проблема</h5>
+                <div class="price__select">
+                  <div class="price__select-button"><span>Плохо моет</span></div>
+                  <div class="price__select-items">
+                    <p class="price__select-item price__select-item_selected" price="250" work="500" reason="Заменим ТЭН, распылитель или устраним засор">Плохо моет</p>
+                    <p class="price__select-item" price="150" work="400" reason="Починим реле уровня воды, заменим шланги">Течет вода</p>
+                    <p class="price__select-item" price="550" work="50" reason="Заменим ТЭН, распылитель или устраним засор">Не сушит</p>
+                    <p class="price__select-item" price="350" work="650" reason="Заменим ТЭН, распылитель или устраним засор">Не заливает воду</p>
+                    <p class="price__select-item" price="150" work="240" reason="Заменим ТЭН, распылитель или устраним засор">Не греет воду</p>
+                    <p class="price__select-item" price="350" work="1250" reason="Починим сетевой фильтр, модуль или заливную систему">Не включается</p>
+                    <p class="price__select-item" price="2250" work="250" reason="Заменим ТЭН, распылитель или устраним засор">Не сливает воду</p>
+                    <p class="price__select-item" price="2520" work="250" reason="Устраним засор, заменим распылитель">Отключается</p>
+                    <p class="price__select-item" price="250" work="2250" reason="Устраним засор, заменим распылитель">Сильно шумит</p>
+                  </div>
+                </div>
+              </div>
+              <div class="price__reason">
+                <h5 class="price__title">Причины</h5>
+                <p class="price__textarea">Заменим ТЭН, распылитель или устраним засор</p>
+              </div>
+              <dvi class="price__prices">
+                <h5 class="price__title">Цена</h5>
+                <div class="price__prices-container">
+                  <div class="price__prices-block">
+                    <p>210 руб.</p><span>Материалы</span>
+                  </div>
+                  <div class="price__prices-block">
+                    <p>210 руб.</p><span>Работа</span>
+                  </div>
+                  <div class="price__prices-block">
+                    <p>210 руб.</p><span>Всего</span>
+                  </div>
+                </div>
+              </dvi>
             </div>
           </div>
+        </div>
+        <div class="advantages tipikal">
+          <article class="advantages__inner">
+            <div class="advantages__title">
+              <h3>Типичные неисправности</h3>
+            </div>
+            <div class="swiper-container" id="swiper-tipikal">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <section class="info">
+                    <div class="info__icon">
+                      <svg class="icon icon-icon9 ">
+                        <use xlink:href="img/svg/sprite.svg#icon9"></use>
+                      </svg>
+                    </div>
+                    <div class="info__title">
+                      <h3> Не включается</h3>
+                    </div>
+                    <div class="info__description">
+                      <p>  Починим сетевой фильтр, модуль или заливную систему</p>
+                    </div>
+                    <div class="tipikal__price">
+                      <p>от 350 р.</p>
+                    </div>
+                  </section>
+                </div>
+                <div class="swiper-slide">
+                  <section class="info">
+                    <div class="info__icon">
+                      <svg class="icon icon-icon10 ">
+                        <use xlink:href="img/svg/sprite.svg#icon10"></use>
+                      </svg>
+                    </div>
+                    <div class="info__title">
+                      <h3> Течет вода</h3>
+                    </div>
+                    <div class="info__description">
+                      <p>Починим реле уровня воды, заменим шланги</p>
+                    </div>
+                    <div class="tipikal__price">
+                      <p>250 р.</p>
+                    </div>
+                  </section>
+                </div>
+                <div class="swiper-slide">
+                  <section class="info">
+                    <div class="info__icon">
+                      <svg class="icon icon-icon11 ">
+                        <use xlink:href="img/svg/sprite.svg#icon11"></use>
+                      </svg>
+                    </div>
+                    <div class="info__title">
+                      <h3> Сильно шумит</h3>
+                    </div>
+                    <div class="info__description">
+                      <p>  Устраним засор, заменим распылитель</p>
+                    </div>
+                    <div class="tipikal__price">
+                      <p>от 450 р.</p>
+                    </div>
+                  </section>
+                </div>
+                <div class="swiper-slide">
+                  <section class="info">
+                    <div class="info__icon">
+                      <svg class="icon icon-icon12 ">
+                        <use xlink:href="img/svg/sprite.svg#icon12"></use>
+                      </svg>
+                    </div>
+                    <div class="info__title">
+                      <h3> Отключается</h3>
+                    </div>
+                    <div class="info__description">
+                      <p>Устраним засор, заменим распылитель</p>
+                    </div>
+                    <div class="tipikal__price">
+                      <p>650 р.</p>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="swiper-button-next tipikal__swiper-button-next"></div>
+              <div class="swiper-button-prev tipikal__swiper-button-prev"></div>
+            </div>
+          </article>
         </div>
         <div class="leave-now">
           <div class="leave-now__text">
@@ -193,93 +325,6 @@
           <div class="leave-now__privacy">
             <p>Нажав на кнопку «Заказать звонок» Вы даёте согласие на обработку персональных данных в соответствии с условиями <a href="#">конфиденциальности</a>. </p>
           </div>
-        </div>
-        <div class="advantages" id="advantages">
-          <article class="advantages__inner">
-            <div class="advantages__title">
-              <h3>Наши преимущества</h3>
-            </div>
-            <div class="swiper-container" id="swiper-advantages">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <section class="info">
-                    <div class="info__icon">
-                      <svg class="icon icon-icon5 ">
-                        <use xlink:href="img/svg/sprite.svg#icon5"></use>
-                      </svg>
-                    </div>
-                    <div class="info__title">
-                      <h3> Высокая скорость</h3>
-                    </div>
-                    <div class="info__description">
-                      <p>
-                          Устраним поломку не только качественно, но и в кратчайшие сроки.
-                        Оптимальная скорость в работе, принятии заказа и приезде мастера на место!
-                      </p>
-                    </div>
-                  </section>
-                </div>
-                <div class="swiper-slide">
-                  <section class="info">
-                    <div class="info__icon">
-                      <svg class="icon icon-icon6 ">
-                        <use xlink:href="img/svg/sprite.svg#icon6"></use>
-                      </svg>
-                    </div>
-                    <div class="info__title">
-                      <h3> Оптимальные цены</h3>
-                    </div>
-                    <div class="info__description">
-                      <p> У нас идеальное соотношение <span>качества/цена. </span>Во время и качественно выполненная  работа, 
-                        лучшие цены закупки оригинальных запчастей для устранение всех типов неполадок
-                      </p>
-                    </div>
-                  </section>
-                </div>
-                <div class="swiper-slide">
-                  <section class="info">
-                    <div class="info__icon">
-                      <svg class="icon icon-icon7 ">
-                        <use xlink:href="img/svg/sprite.svg#icon7"></use>
-                      </svg>
-                    </div>
-                    <div class="info__title">
-                      <h3> Профессионализм</h3>
-                    </div>
-                    <div class="info__description">
-                      <p>
-                          В нашей компании работают специалисты только высшего класса с многолетним опытом 
-                        работы
-                        <p>
-                          Мы выполняем  широкий спектр работ 
-                          по починке бытовой техники
-                        </p>
-                      </p>
-                    </div>
-                  </section>
-                </div>
-                <div class="swiper-slide">
-                  <section class="info">
-                    <div class="info__icon">
-                      <svg class="icon icon-icon8 ">
-                        <use xlink:href="img/svg/sprite.svg#icon8"></use>
-                      </svg>
-                    </div>
-                    <div class="info__title">
-                      <h3> Все бренды</h3>
-                    </div>
-                    <div class="info__description">
-                      <p> Ремонтируем технику большинства популярных  отечественных и зарубежных <a href="#">производителей</a>, 
-                        закупая и используя оригинальные детали для каждого типа устройства
-                      </p>
-                    </div>
-                  </section>
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </article>
         </div>
         <div class="reviews" id="reviews">
           <article class="reviews__inner">
@@ -356,117 +401,14 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev">           </div>
+            <div class="swiper-button-next reviews__swiper-button-next"></div>
+            <div class="swiper-button-prev reviews__swiper-button-prev">           </div>
             <div class="icon-button reviews__leave-review"><a href="#">
                 <button> 
                   <svg class="icon icon-repostbuttonicon ">
                     <use xlink:href="img/svg/sprite.svg#repostbuttonicon"></use>
                   </svg><span>Оставить свой отзыв</span>
                 </button></a></div>
-          </article>
-        </div>
-        <article class="about" id="about">
-          <section class="about__inner">
-            <div class="about__title">
-              <h3>О нашей компании</h3>
-            </div>
-            <div class="about__text">
-              <p>
-                Наша компания работает в сфере ремонтных услуг бытовой техники на протяжении вот уже многих лет. Это обусловлено как профессионализмом наших сотрудников, также и качеством запчастей используемых для 
-                починки бытовой техники и продуманной процедурой обслуживания клиентов.
-                <p>
-                  Разнообразие предоставляемых нами услуг по устранению неисправностей в электронной технике обеспечило нам хорошую клиентскую базу. В числе наших клиентов есть как обычные потребители, так и целые организации и компании, которые на притяжении 
-                  многих лет являются нашими постоянными клиентами.
-                </p>
-                <p>
-                  Мы не только стараемся качественно обслужить наших клиентов, но и пытаемся максимально сэкономить их время. Наши сотрудники строго соблюдают регламент процедуры обслуживания, что позволяет значительно сэкономить время обслуживания.</p>
-                <p>
-                  Третьим  критерием нашей эффективной работы с клиентами является цена. Мы всегда предлагаем наши услуги по самым оптимальным ценам, с учётом нюансов рынка запчастей и их качества.</p>
-                <p>Наши клиенты, которые обращаются к нам за помощью при поломке техники, не раз высказывали нам свою благодарность.</p>
-                <p>
-                  Процесс работы с клиентами поделён на несколько этапов, в которых задействованы специалисты разных профилей самого высокого класса. На каждом этапе, от приёма заказов до починки техники, 
-                  мы обеспечиваем нашему клиенту самый высокий и комфортный уровень обслуживания.
-                </p>
-              </p>
-            </div>
-          </section>
-        </article>
-        <div class="advantages work-stages">
-          <article class="advantages__inner">
-            <div class="advantages__title">
-              <h3>Этапы работы</h3>
-            </div>
-            <div class="swiper-container" id="swiper-advantages">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <section class="info">
-                    <div class="info__icon">
-                      <svg class="icon icon-icon9 ">
-                        <use xlink:href="img/svg/sprite.svg#icon9"></use>
-                      </svg>
-                    </div>
-                    <div class="info__title">
-                      <h3> Приём заявки</h3>
-                    </div>
-                    <div class="info__description">
-                      <p>
-                          Вы оставляете заявку на сайте или по телефону и предоставляете информацию и контактные данные нашему оператору, который подберёт Вам соответствующего специалиста.</p>
-                    </div>
-                  </section>
-                </div>
-                <div class="swiper-slide">
-                  <section class="info">
-                    <div class="info__icon">
-                      <svg class="icon icon-icon10 ">
-                        <use xlink:href="img/svg/sprite.svg#icon10"></use>
-                      </svg>
-                    </div>
-                    <div class="info__title">
-                      <h3> Выезд мастера</h3>
-                    </div>
-                    <div class="info__description">
-                      <p>
-                        В выбранное Вами время по указанному в заявке адресу к Вам приедет специалист компании и произведет диагностику и составление сметы работ</p>
-                    </div>
-                  </section>
-                </div>
-                <div class="swiper-slide">
-                  <section class="info">
-                    <div class="info__icon">
-                      <svg class="icon icon-icon11 ">
-                        <use xlink:href="img/svg/sprite.svg#icon11"></use>
-                      </svg>
-                    </div>
-                    <div class="info__title">
-                      <h3> Починка техники</h3>
-                    </div>
-                    <div class="info__description">
-                      <p>
-                          Согласовав стоимость работ, материалов и запчастей, специалист произведет все необходимые ремонтные работы</p>
-                    </div>
-                  </section>
-                </div>
-                <div class="swiper-slide">
-                  <section class="info">
-                    <div class="info__icon">
-                      <svg class="icon icon-icon12 ">
-                        <use xlink:href="img/svg/sprite.svg#icon12"></use>
-                      </svg>
-                    </div>
-                    <div class="info__title">
-                      <h3> Приём работы</h3>
-                    </div>
-                    <div class="info__description">
-                      <p>
-                         После выполнения работ, специалист предоставит Вам чек и бесплатный гарантийный талон сроком на 1 год.</p>
-                    </div>
-                  </section>
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
           </article>
         </div>
         <div class="counters">
@@ -489,168 +431,69 @@
             </div>
           </div>
         </div>
-        <div class="services" id="services">
-          <div class="services__title">
-            <h3>Услуги и цены</h3>
+        <div class="contacts" id="contacts">
+          <div class="contacts__main-title">
+            <h3>Контакты</h3>
           </div>
-          <div class="services__sub-title">
-            <h4>Типичные поломки и неисправности</h4>
-          </div>
-          <div class="services__table">
-            <div class="services__column1">
-              <p>Плохо моет</p>
-              <p>Течет вода</p>
-              <p>Не сушит</p>
-              <p>Не заливает воду</p>
-              <p>Не греет воду</p>
-              <p>Не включается</p>
-              <p>Не сливает воду</p>
-              <p>Отключается</p>
-              <p>Сильно шумит</p>
-            </div>
-            <div class="services__column2">
-              <p>Заменим ТЭН, распылитель или устраним засор</p>
-              <p>Починим реле уровня воды, заменим шланги</p>
-              <p>Заменим ТЭН, датчик температуры или вентилятор</p>
-              <p>Починим модуль, заменим клапан или устраним засор</p>
-              <p>Починим модуль, заменим ТЭН или датчик температуры</p>
-              <p>Починим сетевой фильтр, модуль или заливную систему</p>
-              <p>Починим насос, заменим датчик воды, устраним засор</p>
-              <p>Починим сетевой фильтр, модуль или заливную систему</p>
-              <p>Устраним засор, заменим распылитель</p>
-            </div>
-            <div class="services__column3">
-              <p>210 руб</p>
-              <p>210 руб</p>
-              <p>210 руб</p>
-              <p>210 руб</p>
-              <p>210 руб</p>
-              <p>210 руб</p>
-              <p>210 руб</p>
-              <p>210 руб</p>
-              <p>210 руб</p>
-            </div>
-          </div>
-          <div class="icon-button reviews__leave-review"><a href="#">
-              <button> 
-                <svg class="icon icon-gears ">
-                  <use xlink:href="img/svg/sprite.svg#gears"></use>
-                </svg><span>Показать полный список</span>
-              </button></a></div>
-        </div>
-        <div class="brands">
-          <div class="brands__inner">     
-            <div class="brands__title">
-              <h3>Ремонт техники от следующих производителнй</h3>
-            </div>
-            <div class="brands__slider">
-              <div class="swiper-container" id="swiper-brands">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="brands__brand"><img src="img/lg.png"></div>
+          <div class="contacts__container">
+            <div class="contacts__inner">
+              <div class="contacts__address">
+                <div class="contacts__address-inner">
+                  <p>Адрес:</p>
+                  <p>Центральный офис: <span> <br>г. Город, пр. Проспект, ул. Улица</span></p>
+                  <p>Телефон: <span>+7 (123) 123 56 89</span></p>
+                  <p>E-майл: <a href="#">е-майл</a></p>
+                  <div class="contacts__address-social"><a class="top-logo__phones-messenger" href="viber://chat?number=+71231235698">
+                      <svg class="icon icon-contactviber3 ">
+                        <use xlink:href="img/svg/sprite.svg#contactviber3"></use>
+                      </svg></a><a class="top-logo__phones-messenger" href="https://api.whatsapp.com/send?phone=+71231235698"> 
+                      <svg class="icon icon-contactwatsapp3 ">
+                        <use xlink:href="img/svg/sprite.svg#contactwatsapp3"></use>
+                      </svg></a><a class="top-logo__phones-messenger" href="https://api.whatsapp.com/send?phone=+71231235698">
+                      <svg class="icon icon-contacttelegram3 ">
+                        <use xlink:href="img/svg/sprite.svg#contacttelegram3"></use>
+                      </svg></a><span>: +7 (123) 123 56 89</span></div>
+                </div>
+              </div>
+              <div class="contacts__form">
+                <div class="contacts__form-call">
+                  <div class="contacts__title contacts__title-phone">
+                    <h4>Заказать звонок</h4>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="brands__brand"><img src="img/indesit.png"></div>
+                  <div>
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="+7 (---) --- -- --">
+                    <button>Заказать</button>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="brands__brand"><img src="img/hotpoint-ariston.png"></div>
+                </div>
+                <div class="contacts__form-master">
+                  <div class="contacts__title contacts__title-master">
+                    <h4>Вызвать специалиста</h4>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="brands__brand"><img src="img/electrolux.png"></div>
+                  <div class="contacts__form-master-container">
+                    <div>
+                      <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="leave-now__call-form-address"><i class="material-icons">location_on</i>
+                      <input type="text" placeholder="Ваш адрес">
+                    </div>
+                    <div>
+                      <input type="text" placeholder="+7 (---) --- -- --">
+                    </div>
+                    <button>Сделать вызов</button>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="brands__brand"><img src="img/samsung.png"></div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="brands__brand"><img src="img/bosch.png"></div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="brands__brand"><img src="img/whirlpool.png"></div>
+                  <div class="contacts__form-master-warning"> 
+                    <p><i class="material-icons">priority_high </i>Прежде, чем сделать вызов, 
+                      советуем Вам сделать звонок, 
+                      проконсультироваться и <a href="">узнать цены </a>
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev">    </div>
-            </div><a href="#">
-              <button class="brands__show-all">Показать всех</button></a>
-          </div>
-        </div>
-        <div class="sale" id="sale">
-          <div class="sale__slider">
-            <div class="swiper-container" id="swiper-sale">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="sale__image"><img src="img/sale.png"></div>
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev">    </div>
             </div>
           </div>
         </div>
       </main>
-      <div class="contacts" id="contacts">
-        <div class="contacts__main-title">
-          <h3>Контакты</h3>
-        </div>
-        <div class="contacts__container">
-          <div class="contacts__inner">
-            <div class="contacts__address">
-              <div class="contacts__address-inner">
-                <p>Адрес:</p>
-                <p>Центральный офис: <span> <br>г. Город, пр. Проспект, ул. Улица</span></p>
-                <p>Телефон: <span>+7 (123) 123 56 89</span></p>
-                <p>E-майл: е-майл</p>
-                <div class="contacts__address-social"><a class="top-logo__phones-messenger" href="viber://chat?number=+71231235698">
-                    <svg class="icon icon-contactviber1 ">
-                      <use xlink:href="img/svg/sprite.svg#contactviber1"></use>
-                    </svg></a><a class="top-logo__phones-messenger" href="https://api.whatsapp.com/send?phone=+71231235698"> 
-                    <svg class="icon icon-contactwatsapp1 ">
-                      <use xlink:href="img/svg/sprite.svg#contactwatsapp1"></use>
-                    </svg></a><a class="top-logo__phones-messenger" href="https://api.whatsapp.com/send?phone=+71231235698">
-                    <svg class="icon icon-contacttelegram1 ">
-                      <use xlink:href="img/svg/sprite.svg#contacttelegram1"></use>
-                    </svg></a><span>: +7 (123) 123 56 89</span></div>
-              </div>
-            </div>
-            <div class="contacts__form">
-              <div class="contacts__form-call">
-                <div class="contacts__title contacts__title-phone">
-                  <h4>Заказать звонок</h4>
-                </div>
-                <div>
-                  <input type="text" placeholder="Имя">
-                  <input type="text" placeholder="+7 (---) --- -- --">
-                  <button>Заказать</button>
-                </div>
-              </div>
-              <div class="contacts__form-master">
-                <div class="contacts__title contacts__title-master">
-                  <h4>Вызвать специалиста</h4>
-                </div>
-                <div class="contacts__form-master-container">
-                  <div>
-                    <input type="text" placeholder="Имя">
-                  </div>
-                  <div class="leave-now__call-form-address"><i class="material-icons">location_on</i>
-                    <input type="text" placeholder="Ваш адрес">
-                  </div>
-                  <div>
-                    <input type="text" placeholder="+7 (---) --- -- --">
-                  </div>
-                  <button>Сделать вызов</button>
-                </div>
-                <div class="contacts__form-master-warning"> 
-                  <p><i class="material-icons">priority_high </i>Прежде, чем сделать вызов, 
-                    советуем Вам сделать звонок, 
-                    проконсультироваться и <a href="">узнать цены </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <footer>
         <div class="map" id="map">
           <iframe width="100%" height="449" frameborder="0" id="yandex-map"></iframe>
@@ -661,7 +504,7 @@
           </div>
         </div>
       </footer>
-      <script src="js/common.min.js" type="text/javascript" defer></script>
+      <script src="js/page.min.js" type="text/javascript" defer></script>
     </div>
   </body>
 </html>

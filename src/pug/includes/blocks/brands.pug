@@ -1,0 +1,35 @@
+block vars
+    - var title = "Ремонт техники от следующих производителей"
+
+div.brands
+        div.brands__inner      
+            div.brands__title
+                h3 #{title}
+            div.brands__slider
+                div.swiper-container(id="swiper-brands")
+                    div.swiper-wrapper
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="img/lg.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="img/indesit.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="img/hotpoint-ariston.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="img/electrolux.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="img/samsung.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="img/bosch.png")
+                        div.swiper-slide
+                            div.brands__brand
+                                img(src="img/whirlpool.png")
+                div(class="swiper-button-next brands__swiper-button-next")
+                div(class="swiper-button-prev brands__swiper-button-prev")     
+            a(href="#")
+                button.brands__show-all Показать всех
