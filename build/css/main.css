@@ -121,7 +121,7 @@ textarea {
 }
 
 .swiper-button-next {
-  background-image: url(img/arrowright.png);
+  background-image: url(../img/arrowright.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 14px;
@@ -133,7 +133,7 @@ textarea {
 }
 
 .swiper-button-prev {
-  background-image: url(img/arrowleft.png);
+  background-image: url(../img/arrowleft.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 14px;
@@ -842,8 +842,8 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(img/worker1.png), url(img/bannerpic.png), -o-linear-gradient(344deg, #ffffff 0%, #ebebeb 100%);
-  background-image: url(img/worker1.png), url(img/bannerpic.png), linear-gradient(106deg, #ffffff 0%, #ebebeb 100%);
+  background-image: url(../img/worker1.png), url(../img/bannerpic.png), -o-linear-gradient(344deg, #ffffff 0%, #ebebeb 100%);
+  background-image: url(../img/worker1.png), url(../img/bannerpic.png), linear-gradient(106deg, #ffffff 0%, #ebebeb 100%);
   background-position: bottom right,left,right;
   background-repeat: no-repeat;
   background-position: 92%, 63%;
@@ -1145,7 +1145,7 @@ textarea {
   position: absolute;
   left: 13%;
   bottom: 0%;
-  background-image: url(img/worker2.png);
+  background-image: url(../img/worker2.png);
   background-repeat: no-repeat;
 }
 
@@ -1607,8 +1607,8 @@ textarea {
 
 .counters {
   height: 172px;
-  background-image: url(img/instrumentstexture.png), -o-linear-gradient(left, #333333 1px, transparent 1px), -o-linear-gradient(bottom, #3d3d3d 1px, transparent 1px), -o-linear-gradient(top, #292828 0%, #3f3535 100%);
-  background-image: url(img/instrumentstexture.png), linear-gradient(90deg, #333333 1px, transparent 1px), linear-gradient(0deg, #3d3d3d 1px, transparent 1px), linear-gradient(to bottom, #292828 0%, #3f3535 100%);
+  background-image: url(../img/instrumentstexture.png), -o-linear-gradient(left, #333333 1px, transparent 1px), -o-linear-gradient(bottom, #3d3d3d 1px, transparent 1px), -o-linear-gradient(top, #292828 0%, #3f3535 100%);
+  background-image: url(../img/instrumentstexture.png), linear-gradient(90deg, #333333 1px, transparent 1px), linear-gradient(0deg, #3d3d3d 1px, transparent 1px), linear-gradient(to bottom, #292828 0%, #3f3535 100%);
   background-size: 117%, 3px 1px, 2px 3px, 1px;
   background-position: -2px -2px;
 }
@@ -2061,8 +2061,8 @@ textarea {
 
 .contacts__container {
   min-height: 412px;
-  background: url(img/worker3.png), -o-linear-gradient(left, #efefef 2px, transparent 1px), -o-linear-gradient(bottom, #fefefe 1px, transparent 1px), -o-linear-gradient(top, #dddddd 0%, #f5f4f4 100%);
-  background: url(img/worker3.png), linear-gradient(90deg, #efefef 2px, transparent 1px), linear-gradient(0deg, #fefefe 1px, transparent 1px), linear-gradient(to bottom, #dddddd 0%, #f5f4f4 100%);
+  background: url(../img/worker3.png), -o-linear-gradient(left, #efefef 2px, transparent 1px), -o-linear-gradient(bottom, #fefefe 1px, transparent 1px), -o-linear-gradient(top, #dddddd 0%, #f5f4f4 100%);
+  background: url(../img/worker3.png), linear-gradient(90deg, #efefef 2px, transparent 1px), linear-gradient(0deg, #fefefe 1px, transparent 1px), linear-gradient(to bottom, #dddddd 0%, #f5f4f4 100%);
   background-size: 11%, 4px 1px, 1px 2px, 1px;
   background-repeat: no-repeat, repeat, repeat, repeat;
   background-position: 83% 112%, -2px -2px, -2px -2px;
@@ -2254,7 +2254,7 @@ textarea {
 
 .contacts__title-phone::before {
   content: '';
-  background: url(img/ordercallicon.png);
+  background: url(../img/ordercallicon.png);
   width: 17px;
   height: 17px;
   background-repeat: no-repeat;
@@ -2268,7 +2268,7 @@ textarea {
 
 .contacts__title-master::before {
   content: '';
-  background: url(img/mastercallicon.png);
+  background: url(../img/mastercallicon.png);
   width: 17px;
   min-width: 17px;
   min-height: 17px;
@@ -2429,7 +2429,7 @@ textarea {
 }
 
 .map iframe {
-  background: url(img/maps.png);
+  background: url(../img/maps.png);
   background-repeat: no-repeat;
 }
 
