@@ -15,7 +15,9 @@ module.exports = function () {
             .pipe($.gulp.dest('build/css/'))
             // Минифицированная версия
             .pipe($.gp.sass({ outputStyle: 'compressed' }))
-            .pipe($.gp.rename('main.min.css'))
+            .pipe($.gp.rename(function (path) {
+                path.extname = ".min.css";
+              }))
             .pipe($.gp.sourcemaps.write('./'))
             .pipe($.gulp.dest('build/css/'))
             .on('end', $.bs.reload);
