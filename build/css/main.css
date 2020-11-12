@@ -1,5 +1,130 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+blockquote,
+body,
+dd,
+dl,
+figcaption,
+figure,
+h1,
+h2,
+h3,
+h4,
+li,
+ol,
+p,
+ul {
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.wrapper {
+  max-width: 1441px;
+  margin: 0 auto;
+  font-family: "Open Sans";
+}
+
 .swiper-container {
   width: 100%;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-map {
+  width: 21px;
+  height: 18px;
+}
+
+.icon-logoicon {
+  width: 55px;
+  height: 67px;
+}
+
+.icon-workonghoursicon {
+  min-width: 24px;
+  min-height: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-contactviber2, .icon-contactwatsapp2, .icon-contacttelegram2 {
+  width: 25px;
+  height: 27px;
+}
+
+.icon-phoneicon {
+  width: 17px;
+  height: 26px;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.icon-repostbuttonicon {
+  width: 21px;
+  height: 16px;
+}
+
+.icon-gears {
+  width: 24px;
+  height: 17px;
+}
+
+.icon-contactviber1, .icon-contactwatsapp1, .icon-contacttelegram1, .icon-contactviber3, .icon-contactwatsapp3, .icon-contacttelegram3 {
+  width: 16px;
+  height: 17px;
+}
+
+.icon-checked {
+  width: 57px;
+  height: 56px;
+  min-width: 57px;
+  min-height: 56px;
 }
 
 .swiper-button-next {
