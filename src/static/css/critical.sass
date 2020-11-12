@@ -1,0 +1,476 @@
+@import "import/reset"
+.wrapper
+    max-width: 1441px
+    margin: 0 auto
+    font-family: "Open Sans"
+.icon
+    width: 100%
+    height: 100%
+    &-map
+        width: 21px
+        height: 18px
+    &-logoicon
+        width: 55px
+        height: 67px
+    &-workonghoursicon
+        min-width: 24px
+        min-height: 24px
+        width: 24px
+        height: 24px
+    &-contactviber2, &-contactwatsapp2, &-contacttelegram2
+        width: 25px
+        height: 27px
+    &-phoneicon
+        width: 17px
+        height: 26px
+        transform: rotate(15deg)   
+    &-repostbuttonicon
+        width: 21px
+        height: 16px
+    &-gears
+        width: 24px
+        height: 17px
+    &-contactviber1, &-contactwatsapp1, &-contacttelegram1, &-contactviber3, &-contactwatsapp3, &-contacttelegram3
+        width: 16px
+        height: 17px
+    &-checked
+        width: 57px
+        height: 56px
+        min-width: 57px
+        min-height: 56px
+
+
+
+// ********************** HEADER **************************
+.header
+    width: 100%
+    &__top-menu
+        width: 100%
+        height: 62px
+        background: #000000
+    &__top-logo
+        min-height: 133px
+        display: flex
+        align-items: center
+        
+    &__bottom-menu
+        display: flex
+        align-items: center
+        background-color: #dcdcdc
+        width: 100%
+.top-menu
+    &__inner
+        max-width: 1281px
+        height: 100%
+        display: flex
+        align-items: center
+        margin: 0 auto
+        padding-left: 20px
+        padding-right: 20px
+        height: 62px
+
+    &__nav
+        margin-top: 9px
+        max-width: 725px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        @media(max-width: 785px )
+            display: none
+        &-item
+            text-decoration: none
+            font-size: 14px
+            color: #ffffff
+            font-weight: 400
+            font-family: Open Sans
+            text-transform: uppercase
+            border-bottom: 3px solid transparent
+            &:hover
+                text-decoration: none
+                color: #fff
+                border-color: #ff0000
+    &__map
+        margin-top: 6px
+        display: flex
+        align-items: center
+        margin-left: auto
+        padding-left: 15px
+        @media(max-width: 785px )
+            margin-left: 0px
+        &-link
+            text-decoration: none
+            font-size: 14px
+            color: #ffffff
+            font-weight: 400
+            font-family: Open Sans
+            margin-left: 5px
+            white-space: nowrap
+            border-bottom: 3px solid transparent
+            &:hover
+                text-decoration: none
+                color: #fff
+                border-color: #ff0000
+
+    &__mobile
+        visibility: hidden
+        pointer-events: none
+        position: absolute
+        left: 0px
+        top: 62px
+        height: 0px
+        display: flex
+        overflow: hidden
+        width: 100%
+        background: rgba(0, 0, 0, 0.932)
+        z-index: 25
+        flex-direction: column
+        transition: height 0.5s linear, visibility 1s linear
+        &-item
+            padding-top: 5px
+            padding-bottom: 5px
+            a
+                text-decoration: none
+                font-size: 14px
+                color: #ffffff
+                font-weight: 400
+                font-family: Open Sans
+                margin-left: 5px
+                white-space: nowrap
+                border-bottom: 3px solid transparent
+                text-transform: uppercase
+            &:hover
+                a
+                    text-decoration: none
+                    color: #fff
+                    border-color: #ff0000
+        &-bottom
+            display: flex
+            height: 100%
+            align-items: center
+            padding-top: 80px
+            flex-direction: column
+        &_visible
+            height: 500px
+            visibility: visible
+            pointer-events: auto
+
+    &__mobile-button
+        display: none
+        padding: 10px 20px
+        cursor: pointer
+        outline: none
+        border: none
+        align-items: center
+        background: none
+        margin-left: auto
+        @media(max-width: 785px )
+            display: flex
+        i
+            display: block
+            width: 23px
+            height: 3px
+            margin: 6px 0 6px 9px
+            position: relative
+            &::before
+                content: ""
+                width: 100%
+                height: 3px
+                background: #fff
+                position: absolute
+                right: 0px
+                top: -9px
+                display: block
+            span
+                width: 50%
+                height: 100%
+                background: #fff
+                position: absolute
+                right: 0px
+                display: block
+                transition: all 0.4s linear
+            &::after
+                content: ""
+                width: 70%
+                height: 3px
+                right: 0px
+                bottom: -9px
+                background: #fff
+                position: absolute
+                display: block
+                transition: all 0.4s linear
+        &:hover
+            i
+                span
+                    width: 100%
+                &::after
+                    width: 100%
+.top-logo
+    background-image: linear-gradient(90deg, #f9f9f9 1px, transparent 1px)
+    background-size: 3px 1px
+    background-position: -2px -2px
+    &__inner
+        max-width: 1281px
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        margin: 0 auto
+        padding-left: 20px
+        padding-right: 20px
+        justify-content: space-between
+        @media ( max-width: 920px )
+            flex-direction: column
+
+    &__logo
+        display: flex
+        padding-top: 20px
+        padding-bottom: 20px
+    &__company-name
+        display: flex
+        flex-direction: column
+        padding-left: 5px
+        justify-content: center
+        span
+            font-size: 45px
+            line-height: 33px
+            color: #231f20
+            font-weight: 700
+            font-family: "Open Sans Condensed"
+            text-transform: uppercase
+        span:nth-child(2)
+            font-size: 23px
+    &__worktime
+        display: flex
+        padding-top: 20px
+        padding-bottom: 20px
+        &-text
+            padding-left: 15px
+    &__phones
+        padding-top: 20px
+        padding-bottom: 20px
+        a:nth-child(1):not(.top-logo__phones-messenger)
+            display: flex
+            align-items: center
+            span
+                padding-left: 5px
+        a
+            font-size: 22px
+            line-height: 33px
+            color: #231f20
+            font-weight: 600
+        a:nth-child(2):not(.top-logo__phones-messenger)
+            padding-left: 22px
+    &__phones-messengers
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 105px
+        width: 100%
+        margin-left: auto
+
+.bottom-menu
+    &__inner
+        max-width: 1281px
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        @media(max-width: 1145px)
+            flex-wrap: wrap
+            justify-content: center
+        @media(max-width: 845px)
+            flex-direction: column
+            
+        margin: 0 auto
+    &__nav
+        display: flex
+        @media(max-width: 845px)
+            flex-direction: column
+        &-item
+            padding-top: 16px
+            padding-bottom: 16px
+            padding-left: 19px
+            padding-right: 19px
+            font-size: 14px
+            text-transform: uppercase
+            font-weight: 700
+            text-align: center
+                
+            &:hover
+                background: #ff0000
+                color: #fff
+    &__call
+        margin-left: auto
+        display: flex
+        @media(max-width: 1145px)
+            margin-left: auto
+            margin-right: auto
+            padding-bottom: 15px
+        @media(max-width: 400px)
+            flex-direction: column
+            align-items: center
+        #request_call_input
+            width: 172px
+            height: 23px
+            border-radius: 4px
+            background-color: #ffffff
+            border: 1px solid #e6e6e6
+            border: none
+            outline: none
+            padding-left: 5px
+            &::placeholder
+                font-size: 14px
+                color: #999999
+        #request_call_btn
+            border-radius: 4px
+            background-color: #ff0000
+            font-size: 14px
+            color: #ffffff
+            font-weight: 700
+            text-transform: uppercase
+            margin-left: 15px
+            padding-top: 2px
+            padding-bottom: 2px
+            padding-left: 15px
+            padding-right: 15px
+            box-shadow: 0 0 0 0 rgba(#ff0000, .5)
+            animation: pulse 1.5s infinite
+            @media(max-width: 400px)
+                margin-left: 0px
+                margin-top: 10px
+    &__mobile
+        visibility: hidden
+        pointer-events: none
+        position: absolute
+        left: 0px
+        top: 62px
+        height: 0px
+        display: flex
+        overflow: hidden
+        width: 100%
+        background: rgba(0, 0, 0, 0.932)
+        z-index: 25
+        flex-direction: column
+        transition: height 0.5s linear, visibility 1s linear
+        &-item
+            padding-top: 5px
+            padding-bottom: 5px
+            a
+                text-decoration: none
+                font-size: 14px
+                color: #ffffff
+                font-weight: 400
+                font-family: Open Sans
+                margin-left: 5px
+                white-space: nowrap
+                border-bottom: 3px solid transparent
+                text-transform: uppercase
+            &:hover
+                a
+                    text-decoration: none
+                    color: #fff
+                    border-color: #ff0000
+        &-bottom
+            display: flex
+            height: 100%
+            align-items: center
+            padding-top: 80px
+            flex-direction: column
+        &_visible
+            height: 500px
+            visibility: visible
+            pointer-events: auto
+
+    &__mobile-button
+        display: none
+        padding: 10px 20px
+        cursor: pointer
+        outline: none
+        border: none
+        align-items: center
+        background: none
+        margin-left: auto
+        @media(max-width: 1145px )
+            display: 
+        i
+            display: block
+            width: 23px
+            height: 3px
+            margin: 6px 0 6px 9px
+            position: relative
+            &::before
+                content: ""
+                width: 100%
+                height: 3px
+                background: #000000
+                position: absolute
+                right: 0px
+                top: -9px
+                display: block
+            span
+                width: 50%
+                height: 100%
+                background: #000000
+                position: absolute
+                right: 0px
+                display: block
+                transition: all 0.4s linear
+            &::after
+                content: ""
+                width: 70%
+                height: 3px
+                right: 0px
+                bottom: -9px
+                background: #000000
+                position: absolute
+                display: block
+                transition: all 0.4s linear
+        &:hover
+            i
+                span
+                    width: 100%
+
+                &::after
+                    width: 100%
+
+
+.banner
+    min-height: 251px
+    width: 100%
+    &__inner
+        max-width: 1281px
+        width: 100%
+        height: 100%     
+        margin: 0 auto
+        padding-left: 10px
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &__text
+        max-width: 487px
+        width: 100%
+        h1,h2,h3
+            text-transform: uppercase
+        h1
+            font-size: 42px
+            color: #ff0000
+            font-weight: 700
+            font-family: "Open Sans Condensed"
+            @media (max-width: 600px)
+                font-size: 32px    
+            @media (max-width: 460px)
+                font-size: 28px  
+            
+        h2
+            font-size: 22px
+            color: #333333
+            font-weight: 600
+            @media (max-width: 600px)
+                font-size: 20px    
+            @media (max-width: 460px)
+                font-size: 18px  
+        h3
+            font-size: 14px
+            color: #333333
+            font-weight: 600

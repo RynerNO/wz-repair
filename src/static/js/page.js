@@ -1,6 +1,9 @@
 import IMask from 'imask';
 // import Swiper JS
 import Swiper, { Navigation, Autoplay } from 'swiper';
+window.addEventListener('load' , () => {
+
+
 Swiper.use(Navigation)
 Swiper.use(Autoplay)
 
@@ -183,3 +186,5 @@ for(let calculatorItem of calculatorItems) {
 
   })
 }
+
+})

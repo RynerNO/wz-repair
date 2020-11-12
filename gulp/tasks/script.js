@@ -53,7 +53,7 @@ module.exports = function () {
                 stream: true
             }));
     });
-    $.gulp.task('scripts', function () {
+    $.gulp.task('scripts:page', function () {
         return $.gulp.src('./src/static/js/page.js')
             .pipe($.webpackStream({
                 output: {
@@ -86,4 +86,36 @@ module.exports = function () {
                 stream: true
             }));
     });
+    $.gulp.task('scripts:webp', function () {
+        return $.gulp.src('./src/static/js/webp.js')
+            .pipe($.webpackStream({
+                output: {
+                    filename: 'webp.js',
+                },
+                module: {
+                    rules: [
+                        {
+                            test: /\.(js)$/,
+                            exclude: /(node_modules)/,
+                            loader: 'babel-loader',
+                            query: {
+                                presets: [['@babel/env', {
+                                    targets: "> 0.25%, not dead"
+                                }]],
+                            }
+                        }   
+                    ]
+                },
+            }))
+            .pipe($.gulp.dest('build/js/'))
+            .pipe($.uglify())
+            .pipe($.rename({ suffix: '.min' }))
+            .pipe($.gulp.dest('build/js/'))
+            .pipe($.bs.reload({
+                stream: true
+            }));
+    });
+
+
+    
 }

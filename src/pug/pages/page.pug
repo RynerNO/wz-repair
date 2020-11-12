@@ -1,7 +1,7 @@
 extends ../layout/layout.pug
 block links
     include ../includes/links.pug
-    link(rel="stylesheet" href="css/page.css")
+    link(rel="preload" href="css/page.css" as="style"  onload="this.rel='stylesheet'" crossorigin="anonymous")
 block vars
     - var title = 'Ремонт стиральных машин';
 block header
@@ -13,4 +13,5 @@ block footer
     include ../includes/footer.pug     
               
 block scripts
-    script(src="js/page.min.js" type="text/javascript" defer)
+    script(src="js/page.min.js" type="text/javascript" async)
+    script(src="js/webp.min.js" type="text/javascript")
